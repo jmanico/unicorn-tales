@@ -2,10 +2,10 @@
 
 ## Required Requirement Inputs
 
-- Project purpose: Provide a story platform for children. Use lessons in stories to help children grow. Let parents control the lessons. Let children choose the course of a story. Let parents use the platform to tell stories themselves.
+- Project purpose: Provide a story platform for children. Use lessons in stories to help children grow. Let parents control the lessons. Let children choose the course of a story. Let parents use the platform to tell stories themselves. Support learning from homework and school subjects through educational stories.
 - Primary users / actors: Children and parents. Parents act as administrators and can tell stories to their children.
-- Core workflows: Understand children, their preferences, and their wishes; generate stories dynamically; let parents select lessons; teach those lessons through stories; let children make story choices; provide stories for parents to tell to their children.
-- Business objects / data entities: Children, parents, preferences, wishes, stories, lessons, story choices, and parent lesson selections.
+- Core workflows: Understand children, their preferences, and their wishes. Generate stories dynamically and let children make story choices. Let parents select the lessons taught in stories. Provide stories for parents to tell to their children. Let parents enter homework and school subjects for educational stories.
+- Business objects / data entities: Children, parents, preferences, wishes, stories, lessons, story choices, parent lesson selections, homework, and school subjects.
 - External integrations: UNKNOWN
 - Authentication / roles: Parents are administrators who control lessons. Children take part in stories. Authentication: UNKNOWN.
 - Regulatory or privacy constraints: UNKNOWN
@@ -33,6 +33,13 @@
 
 - **FR-4.1** The system MUST present story content to parents for them to tell the story to their children.
 
+### Educational Stories
+
+- **FR-5.1** The system MUST let parents enter homework for their children.
+- **FR-5.2** The system MUST let parents enter the subjects their children study at school.
+- **FR-5.3** The system MUST generate educational stories based on homework that a parent enters.
+- **FR-5.4** The system MUST generate educational stories based on school subjects that a parent enters.
+
 ## Non-Functional Requirements
 
 None stated
@@ -52,3 +59,7 @@ None stated
 - **OQ-11** Which controls must parents have in addition to lesson selection?
 - **OQ-12** What controls must parents have when they tell stories themselves? How must story choices work in this workflow?
 - **OQ-13** Can more than one parent administer the same child? If so, how must the system resolve different lesson selections?
+- **OQ-14** What information and input formats must parents use for homework and school subjects?
+- **OQ-15** How must parents choose which homework or school subjects an educational story uses?
+- **OQ-16** How must homework and school subjects interact with the parent's lesson selections?
+- **OQ-17** What criteria must show that an educational story teaches the supplied homework or school subject correctly?
